@@ -1,0 +1,181 @@
+/*
+        GENERAL SETTINGS
+*/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.clearfix,
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+       HEADER/BANNER SECTION
+*/
+
+.container-header {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/banner1920x1000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 1300px;
+    height: 7%;
+    margin: 0 auto;
+}
+
+/*        LOGO/ NAVIGATION                    */
+.logo {
+    margin-top: 1%;
+    display: inline-block;
+}
+
+
+.navigation {
+    width: 100%;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+.nav li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+    opacity: 0.8;
+}
+
+
+
+
+/*
+        BANNER-----MAIN CONTENT
+*/
+.container-header-main {
+    margin: 0 auto;
+    width: 50%;
+    height: 80%;
+}
+
+/* TEXT CONTENT*/
+.text-container {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-size: 6.5rem;
+    margin: 0;
+}
+
+.text-container img {
+    margin-top: 15%;
+}
+
+/* SMALL LINE BELOW TEXT CONTENT*/
+.small-bottom-border {
+    margin: 5% auto;
+    width: 10%;
+    border-bottom: 5px solid #fff;
+}
+
+/* LEARN MORE BTN BELOW SMALL LINE*/
+.btn-learn-more {
+    width: 150px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid #fff;
+    margin: 0 auto;
+    padding: 3.7px;
+}
+
+.btn-learn-more:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*
+        FOOTER CONTENT
+*/
+
+.footer-content {
+    margin: 0 auto;
+    width: 80%;
+    height: 10%;
+}
+
+.inline {
+    color: #fff;
+    margin-left: 2.5%;
+    width: 20%;
+    display: inline-block;
+    border-top: 3px solid #fff;
+    font-size: 1.1rem;
+    padding-top: 8px;
+}
+
+.number {
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE SECTION*/
+
+@media only screen and (max-width: 1392px) {
+    .header {
+        width: 100%;
+    }
+   
+}
+
+@media only screen and (max-width: 860px) {
+    .navigation {
+        display: none;
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .small-bottom-border {
+        margin: 4% auto;
+    }
+}
+
+@media only screen and (min-width: 1392px) {
+
+}
